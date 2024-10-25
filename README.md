@@ -1,60 +1,29 @@
-#include <stdio.h>
-#include <stdlib.h>
+👋 Hello, I'm Yugank Prajapati
+Aspiring Software Engineer | Web Developer | Tech Enthusiast
 
-int main(int argc, char *argv[]) {
-    // Check if 20 integers are provided as command line arguments
-    if (argc != 21) {
-        printf("Please provide 20 integers as command line arguments.\n");
-        return 1;
-    }
+Welcome to my GitHub! I'm a Computer Science undergraduate at Graphic Era Hill University, diving deep into coding, building projects, and expanding my technical expertise. I'm passionate about web development, algorithms, and artificial intelligence, and I'm always looking for opportunities to enhance my skills and collaborate with like-minded developers.
 
-    // Open the file number.txt for writing
-    FILE *file = fopen("number.txt", "w");
-    if (file == NULL) {
-        printf("Error opening file.\n");
-        return 1;
-    }
+🛠️ Technologies & Tools
+Languages: C++, Java, JavaScript, HTML, CSS
+Web Development: Node.js, AJAX, XML, JSP, Apache Tomcat, GSAP, Locomotive
+Computer Science Fundamentals: Data Structures & Algorithms, Machine Learning
+Database Management: MySQL, MongoDB
+Tools: Git, GitHub, VS Code, IntelliJ IDEA
+📚 Projects
+Bank Management System
+A full-stack project built during my web development training with Arsal Software Solution. This project demonstrates my skills in Java, HTML, CSS, AJAX, and JSP to manage bank records and transactions.
 
-    // Write the integers to number.txt
-    for (int i = 1; i <= 20; i++) {
-        fprintf(file, "%s\n", argv[i]);
-    }
+AI-Powered Applications
+In progress: Leveraging AI to develop applications that automate tasks and offer personalized user experiences.
 
-    // Close the file
-    fclose(file);
+🌱 What I'm Currently Working On
+📘 Expanding my knowledge in Machine Learning and Artificial Intelligence.
+🔍 Enhancing my skills in data structures and algorithms to sharpen my problem-solving abilities.
+🌐 Exploring advanced web animations and UI/UX for an improved user experience.
+📈 Goals
+Short-Term: Secure a Summer Analyst Internship or Software Engineer Internship to gain hands-on industry experience.
+Long-Term: Contribute to impactful projects in the tech industry, ideally in fields like AI and software development.
+💬 Let's Connect!
+I'm always open to discussing projects, tech innovations, or career opportunities.
 
-    // Open the file number.txt for reading
-    file = fopen("number.txt", "r");
-    if (file == NULL) {
-        printf("Error opening file.\n");
-        return 1;
-    }
-
-    // Open the files odd.txt and even.txt for writing
-    FILE *oddFile = fopen("odd.txt", "w");
-    FILE *evenFile = fopen("even.txt", "w");
-    if (oddFile == NULL || evenFile == NULL) {
-        printf("Error opening file.\n");
-        return 1;
-    }
-
-    // Read the numbers from number.txt and separate them into odd and even files
-    int num;
-    while (fscanf(file, "%d", &num) != EOF) {
-        if (num % 2 == 0) {
-            fprintf(evenFile, "%d\n", num);
-        } else {
-            fprintf(oddFile, "%d\n", num);
-        }
-    }
-
-    // Close the files
-    fclose(file);
-    fclose(oddFile);
-    fclose(evenFile);
-
-    printf("Numbers have been separated into odd.txt and even.txt successfully.\n");
-
-    return 0;
-}
-
+Let’s build something amazing together! 🚀
